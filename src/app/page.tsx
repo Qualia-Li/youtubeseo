@@ -289,12 +289,13 @@ const App: React.FC = () => {
                     </div>
                   </div>
                   <div className="md:w-1/2 md:pl-12 relative">
-                    <div className="absolute top-0 left-0 -ml-6 mt-0 h-16 w-16 rounded-none bg-black border-4 border-black hidden md:flex items-center justify-center z-10">
+                    <div className="absolute top-0 left-0 -ml-8 mt-0 h-16 w-16 rounded-none bg-black border-4 border-black hidden md:flex items-center justify-center z-10">
+                      <span className="text-3xl mr-1">🔍</span>
                       <i className="fas fa-search text-2xl text-white"></i>
                     </div>
                     <div className="border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
                       <Image
-                        src="https://public.readdy.ai/ai/img_res/806083f75003a1d01881cd80dce0dbdc.jpg"
+                        src="/images/landing/keyword_analysis.png"
                         alt="Keyword Analysis"
                         width={500}
                         height={300}
@@ -326,12 +327,13 @@ const App: React.FC = () => {
                     </div>
                   </div>
                   <div className="md:w-1/2 md:pr-12 relative">
-                    <div className="absolute top-0 right-0 -mr-6 mt-0 h-16 w-16 rounded-none bg-black border-4 border-black hidden md:flex items-center justify-center z-10">
+                    <div className="absolute top-0 right-0 -mr-8 mt-0 h-16 w-16 rounded-none bg-black border-4 border-black hidden md:flex items-center justify-center z-10">
+                      <span className="text-3xl mr-1">📄</span>
                       <i className="fas fa-file-alt text-2xl text-white"></i>
                     </div>
                     <div className="border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
                       <Image
-                        src="https://public.readdy.ai/ai/img_res/3251bddfbeed2086f579092889855dc2.jpg"
+                        src="/images/landing/content_generation.png"
                         alt="Content Generation"
                         width={500}
                         height={300}
@@ -361,12 +363,13 @@ const App: React.FC = () => {
                     </div>
                   </div>
                   <div className="md:w-1/2 md:pl-12 relative">
-                    <div className="absolute top-0 left-0 -ml-6 mt-0 h-16 w-16 rounded-none bg-black border-4 border-black hidden md:flex items-center justify-center z-10">
+                    <div className="absolute top-0 left-0 -ml-8 mt-0 h-16 w-16 rounded-none bg-black border-4 border-black hidden md:flex items-center justify-center z-10">
+                      <span className="text-3xl mr-1">🎥</span>
                       <i className="fas fa-video text-2xl text-white"></i>
                     </div>
                     <div className="border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
                       <Image
-                        src="https://public.readdy.ai/ai/img_res/7917a7df5057f45ca0d99ec9a40ea470.jpg"
+                        src="/images/landing/video_creation.png"
                         alt="Video Creation"
                         width={500}
                         height={300}
@@ -396,12 +399,13 @@ const App: React.FC = () => {
                     </div>
                   </div>
                   <div className="md:w-1/2 md:pr-12 relative">
-                    <div className="absolute top-0 right-0 -mr-6 mt-0 h-16 w-16 rounded-none bg-black border-4 border-black hidden md:flex items-center justify-center z-10">
+                    <div className="absolute top-0 right-0 -mr-8 mt-0 h-16 w-16 rounded-none bg-black border-4 border-black hidden md:flex items-center justify-center z-10">
+                      <span className="text-3xl mr-1">📈</span>
                       <i className="fas fa-chart-line text-2xl text-white"></i>
                     </div>
                     <div className="border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
                       <Image
-                        src="https://public.readdy.ai/ai/img_res/d87b0ed2cc0d4fa9173a49c33b8fc23d.jpg"
+                        src="/images/landing/seo_optimization.png"
                         alt="SEO Optimization"
                         width={500}
                         height={300}
@@ -434,12 +438,13 @@ const App: React.FC = () => {
                     </div>
                   </div>
                   <div className="md:w-1/2 md:pl-12 relative">
-                    <div className="absolute top-0 left-0 -ml-6 mt-0 h-16 w-16 rounded-none bg-black border-4 border-black hidden md:flex items-center justify-center z-10">
+                    <div className="absolute top-0 left-0 -ml-8 mt-0 h-16 w-16 rounded-none bg-black border-4 border-black hidden md:flex items-center justify-center z-10">
+                      <span className="text-3xl mr-1">📊</span>
                       <i className="fas fa-chart-bar text-2xl text-white"></i>
                     </div>
                     <div className="border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
                       <Image
-                        src="https://public.readdy.ai/ai/img_res/bff7d9739a36e0bbe601a9cf256e959d.jpg"
+                        src="/images/landing/performance_tracking.png"
                         alt="Performance Tracking"
                         width={500}
                         height={300}
