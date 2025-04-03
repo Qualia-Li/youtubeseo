@@ -1,6 +1,7 @@
 // The exported code uses Tailwind CSS. Install Tailwind CSS in your dev environment to ensure all styles work.
 
 import React from "react";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
@@ -180,9 +181,11 @@ const App: React.FC = () => {
                 patterns across YouTube and Google.
               </p>
               <div className="mt-auto">
-                <img
+                <Image
                   src="https://public.readdy.ai/ai/img_res/8e79301944065e1b7c3a8fc76c454bac.jpg"
                   alt="Keyword Discovery"
+                  width={500}
+                  height={300}
                   className="rounded-xl w-full h-48 object-cover object-top"
                 />
               </div>
@@ -201,9 +204,11 @@ const App: React.FC = () => {
                 feel authentic and deliver real value.
               </p>
               <div className="mt-auto">
-                <img
+                <Image
                   src="https://public.readdy.ai/ai/img_res/5741e0b29842cb830bcec9914af1308a.jpg"
                   alt="Automated Video Creation"
+                  width={500}
+                  height={300}
                   className="rounded-xl w-full h-48 object-cover object-top"
                 />
               </div>
@@ -222,9 +227,11 @@ const App: React.FC = () => {
                 search with our proprietary algorithms.
               </p>
               <div className="mt-auto">
-                <img
+                <Image
                   src="https://public.readdy.ai/ai/img_res/4c6898a238b6401d031f0738b482adc8.jpg"
                   alt="AI SEO Optimization"
+                  width={500}
+                  height={300}
                   className="rounded-xl w-full h-48 object-cover object-top"
                 />
               </div>
@@ -278,9 +285,11 @@ const App: React.FC = () => {
                     <div className="absolute top-0 left-0 -ml-6 mt-2 h-12 w-12 rounded-full bg-indigo-600 border-4 border-white hidden md:flex items-center justify-center">
                       <i className="fas fa-search text-white"></i>
                     </div>
-                    <img
+                    <Image
                       src="https://public.readdy.ai/ai/img_res/806083f75003a1d01881cd80dce0dbdc.jpg"
                       alt="Keyword Analysis"
+                      width={500}
+                      height={300}
                       className="rounded-xl shadow-lg"
                     />
                   </div>
@@ -311,9 +320,11 @@ const App: React.FC = () => {
                     <div className="absolute top-0 right-0 -mr-6 mt-2 h-12 w-12 rounded-full bg-indigo-600 border-4 border-white hidden md:flex items-center justify-center">
                       <i className="fas fa-file-alt text-white"></i>
                     </div>
-                    <img
+                    <Image
                       src="https://public.readdy.ai/ai/img_res/3251bddfbeed2086f579092889855dc2.jpg"
                       alt="Content Generation"
+                      width={500}
+                      height={300}
                       className="rounded-xl shadow-lg"
                     />
                   </div>
@@ -342,9 +353,11 @@ const App: React.FC = () => {
                     <div className="absolute top-0 left-0 -ml-6 mt-2 h-12 w-12 rounded-full bg-indigo-600 border-4 border-white hidden md:flex items-center justify-center">
                       <i className="fas fa-video text-white"></i>
                     </div>
-                    <img
+                    <Image
                       src="https://public.readdy.ai/ai/img_res/7917a7df5057f45ca0d99ec9a40ea470.jpg"
                       alt="Video Creation"
+                      width={500}
+                      height={300}
                       className="rounded-xl shadow-lg"
                     />
                   </div>
@@ -373,9 +386,11 @@ const App: React.FC = () => {
                     <div className="absolute top-0 right-0 -mr-6 mt-2 h-12 w-12 rounded-full bg-indigo-600 border-4 border-white hidden md:flex items-center justify-center">
                       <i className="fas fa-chart-line text-white"></i>
                     </div>
-                    <img
+                    <Image
                       src="https://public.readdy.ai/ai/img_res/d87b0ed2cc0d4fa9173a49c33b8fc23d.jpg"
                       alt="SEO Optimization"
+                      width={500}
+                      height={300}
                       className="rounded-xl shadow-lg"
                     />
                   </div>
@@ -407,9 +422,11 @@ const App: React.FC = () => {
                     <div className="absolute top-0 left-0 -ml-6 mt-2 h-12 w-12 rounded-full bg-indigo-600 border-4 border-white hidden md:flex items-center justify-center">
                       <i className="fas fa-chart-bar text-white"></i>
                     </div>
-                    <img
+                    <Image
                       src="https://public.readdy.ai/ai/img_res/bff7d9739a36e0bbe601a9cf256e959d.jpg"
                       alt="Performance Tracking"
+                      width={500}
+                      height={300}
                       className="rounded-xl shadow-lg"
                     />
                   </div>
@@ -478,7 +495,7 @@ const App: React.FC = () => {
                           <span className="font-semibold">
                             Content Structured
                           </span>{" "}
-                          specifically for Google's AI understanding algorithms
+                          specifically for Google&apos;s AI understanding algorithms
                         </p>
                       </li>
                       <li className="flex">
@@ -489,7 +506,7 @@ const App: React.FC = () => {
                           <span className="font-semibold">
                             Semantic Optimization
                           </span>{" "}
-                          that aligns with Google's knowledge graph
+                          that aligns with Google&apos;s knowledge graph
                         </p>
                       </li>
                       <li className="flex">
@@ -508,9 +525,11 @@ const App: React.FC = () => {
                       <div className="bg-indigo-50 p-4 rounded-xl">
                         <div className="flex items-center mb-2">
                           <div className="h-10 w-10 rounded-full overflow-hidden mr-3">
-                            <img
+                            <Image
                               src="https://public.readdy.ai/ai/img_res/54e6d19a38bb8341f0828c331db8ebdb.jpg"
                               alt="Sarah Johnson"
+                              width={40}
+                              height={40}
                               className="h-full w-full object-cover"
                             />
                           </div>
@@ -522,17 +541,20 @@ const App: React.FC = () => {
                           </div>
                         </div>
                         <p className="text-gray-700 italic">
-                          "After optimizing with YouTubeSEO.ai, our videos started
-                          appearing in Google's AI search results consistently.
-                          Our traffic increased by 215% in just two months."
+                          &quot;Increased my channel views by 300% in 3 months! The
+                          long-tail keyword discovery tool found niches I never would
+                          have considered, and the automated video creation saved me
+                          countless hours of work.&quot;
                         </p>
                       </div>
                     </div>
                   </div>
                   <div className="md:w-1/2 bg-indigo-50 p-8 flex items-center justify-center">
-                    <img
+                    <Image
                       src="https://public.readdy.ai/ai/img_res/e6fb0927821739f5adae9c38ea0c95f6.jpg"
                       alt="Google AI Search Results"
+                      width={500}
+                      height={300}
                       className="rounded-xl shadow-md max-w-full"
                     />
                   </div>
@@ -555,7 +577,7 @@ const App: React.FC = () => {
                           <span className="font-semibold">
                             Direct Citations
                           </span>{" "}
-                          in Perplexity's AI-generated answers and summaries
+                          in Perplexity&apos;s AI-generated answers and summaries
                         </p>
                       </li>
                       <li className="flex">
@@ -577,7 +599,7 @@ const App: React.FC = () => {
                           <span className="font-semibold">
                             Question-Answer Format
                           </span>{" "}
-                          that aligns perfectly with Perplexity's search
+                          that aligns perfectly with Perplexity&apos;s search
                           patterns
                         </p>
                       </li>
@@ -598,9 +620,11 @@ const App: React.FC = () => {
                       <div className="bg-purple-50 p-4 rounded-xl">
                         <div className="flex items-center mb-2">
                           <div className="h-10 w-10 rounded-full overflow-hidden mr-3">
-                            <img
+                            <Image
                               src="https://public.readdy.ai/ai/img_res/9ba43cc8d05141f0005fc7a201fb85cd.jpg"
                               alt="Michael Chen"
+                              width={40}
+                              height={40}
                               className="h-full w-full object-cover"
                             />
                           </div>
@@ -612,18 +636,20 @@ const App: React.FC = () => {
                           </div>
                         </div>
                         <p className="text-gray-700 italic">
-                          "My educational content now regularly appears in
-                          Perplexity AI responses. The platform helped me
-                          structure my videos to be AI-friendly, resulting in a
-                          178% increase in traffic."
+                          &quot;Finally cracked the YouTube algorithm thanks to their
+                          keyword strategy! My videos now appear in both Google and
+                          Perplexity AI search results, bringing in viewers I never
+                          had access to before.&quot;
                         </p>
                       </div>
                     </div>
                   </div>
                   <div className="md:w-1/2 bg-purple-50 p-8 flex items-center justify-center">
-                    <img
+                    <Image
                       src="https://public.readdy.ai/ai/img_res/27f64543697097c6a59b99f98a2aeec5.jpg"
                       alt="Perplexity AI References"
+                      width={500}
+                      height={300}
                       className="rounded-xl shadow-md max-w-full"
                     />
                   </div>
@@ -1110,7 +1136,7 @@ const App: React.FC = () => {
             <Card className="p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow rounded-xl">
               <div className="flex justify-between items-start cursor-pointer">
                 <h3 className="text-xl font-semibold">
-                  How does the automated video creation work?
+                  &quot;How does the automated video creation work?&quot;
                 </h3>
                 <i className="fas fa-chevron-down text-indigo-600"></i>
               </div>
@@ -1131,7 +1157,7 @@ const App: React.FC = () => {
                 <i className="fas fa-chevron-down text-indigo-600"></i>
               </div>
               <div className="mt-4 text-gray-600">
-                Our AI doesn't just find popular keywords—it identifies valuable
+                Our AI doesn&apos;t just find popular keywords—it identifies valuable
                 long-tail keywords with high intent but low competition. We also
                 analyze which keywords are most likely to be featured in AI
                 search results from Google and Perplexity, giving you an edge in
@@ -1174,16 +1200,16 @@ const App: React.FC = () => {
             <Card className="p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow rounded-xl">
               <div className="flex justify-between items-start cursor-pointer">
                 <h3 className="text-xl font-semibold">
-                  How long does it take to create a video?
+                  &quot;How long does it take to create a video?&quot;
                 </h3>
                 <i className="fas fa-chevron-down text-indigo-600"></i>
               </div>
               <div className="mt-4 text-gray-600">
-                Most videos are ready within 2-4 hours after you approve the
+                &quot;Most videos are ready within 2-4 hours after you approve the
                 keyword and topic. For more complex videos or those requiring
                 extensive customization, it may take up to 24 hours. Our
                 Enterprise plan includes priority processing for faster
-                turnaround times.
+                turnaround times.&quot;
               </div>
             </Card>
           </div>
