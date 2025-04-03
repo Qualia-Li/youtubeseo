@@ -129,7 +129,7 @@ const App: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="absolute -right-10 top-20 hidden md:block">
+          <div className="absolute -right-10 top-20 hidden xl:block">
             <div className="w-[500px] h-[400px] border-8 border-black rounded-none shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transform rotate-12 overflow-hidden">
                   <Image
                     src="/images/landing/keyword_analysis.png"
