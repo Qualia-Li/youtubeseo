@@ -114,7 +114,7 @@ const App: React.FC = () => {
               </div>
               <div className="ml-8 text-lg text-black font-bold">
                 <span className="font-black text-xl">2,500+</span>{" "}
-                content creators trust us
+                small business owners trust us
               </div>
             </div>
           </div>
@@ -700,7 +700,7 @@ const App: React.FC = () => {
               What Our Clients Say
             </h2>
             <p className="text-2xl text-white max-w-3xl mx-auto font-medium">
-              Join thousands of content creators who have transformed their
+              Join thousands of small business owners who have transformed their
               YouTube presence with our AI-powered platform.
             </p>
           </div>
@@ -803,7 +803,7 @@ const App: React.FC = () => {
 
           <div className="mt-20 text-center">
             <p className="text-2xl text-white mb-10 font-bold">
-              Trusted by content creators from leading brands
+              Trusted by small business owners from leading brands
             </p>
             <div className="flex flex-wrap justify-center gap-10 items-center">
               <div className="flex items-center text-[#fcd40b] hover:text-white transition-colors cursor-pointer border-4 border-[#fcd40b] px-6 py-4 shadow-[4px_4px_0px_0px_rgba(252,212,11,0.5)]">
@@ -1005,7 +1005,7 @@ const App: React.FC = () => {
                 Ready to Transform Your YouTube Strategy?
               </h2>
               <p className="text-2xl text-black mb-10 font-medium">
-                Join thousands of content creators who are leveraging AI to
+                Join thousands of small business owners who are leveraging AI to
                 dominate YouTube and next-generation search engines.
               </p>
               <div className="flex flex-col sm:flex-row gap-6">
