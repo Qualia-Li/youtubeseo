@@ -76,16 +76,27 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-2xl py-10">
             <Badge className="mb-4 bg-[#fcd40b] text-black hover:bg-[#fcd40b]/80 font-bold border-2 border-black text-lg px-4 py-2 rounded-none shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] cursor-pointer">
-              AI-Powered YouTube SEO
+              AI-Powered
             </Badge>
             <h1 className="text-5xl font-black tracking-tight mb-6 text-black">
-              Dominate YouTube SEO with AI-Powered Content Creation
+              Show Your Product on YouTube for Every Keyword
             </h1>
-            <p className="text-2xl text-black mb-8 font-medium">
-              Discover untapped long-tail keywords, automatically create
-              engaging YouTube videos, and optimize for both traditional and AI
-              search engines like Google and Perplexity.
-            </p>
+            <div className="text-2xl text-black mb-8 font-medium">
+              <ul className="list-none space-y-3">
+                <li className="flex items-start">
+                  <span className="text-2xl mr-3">🔍</span>
+                  <span>Discover untapped long-tail keywords</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-2xl mr-3">🎬</span>
+                  <span>Automatically create SEO-optimized YouTube videos</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-2xl mr-3">🤖</span>
+                  <span>Win traffic from Google and Perplexity</span>
+                </li>
+              </ul>
+            </div>
             <div className="flex flex-col sm:flex-row gap-6">
               <Button className="bg-[#fcd40b] border-4 border-black rounded-none text-black font-bold text-xl py-6 px-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all cursor-pointer whitespace-nowrap">
                 Boost Your YouTube Presence
@@ -119,7 +130,14 @@ const App: React.FC = () => {
             </div>
           </div>
           <div className="absolute -right-10 top-20 hidden md:block">
-            <div className="w-[400px] h-[400px] bg-[#fcd40b] border-8 border-black rounded-none shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transform rotate-12">
+            <div className="w-[500px] h-[400px] border-8 border-black rounded-none shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transform rotate-12 overflow-hidden">
+                  <Image
+                    src="/images/landing/keyword_analysis.png"
+                    alt="AI SEO Optimization"
+                    width={400}
+                    height={400}
+                    className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -131,10 +149,10 @@ const App: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center bg-[#fcd40b] text-black border-4 border-black p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
               <p className="text-4xl font-black">300%</p>
-              <p className="text-black font-bold mt-2">Average View Increase</p>
+              <p className="text-black font-bold mt-2">Average Traffic Increase</p>
             </div>
             <div className="text-center bg-white text-black border-4 border-black p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-              <p className="text-4xl font-black">10x</p>
+              <p className="text-4xl font-black">100x</p>
               <p className="text-black font-bold mt-2">Content Creation Speed</p>
             </div>
             <div className="text-center bg-[#fcd40b] text-black border-4 border-black p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
@@ -143,7 +161,7 @@ const App: React.FC = () => {
             </div>
             <div className="text-center bg-white text-black border-4 border-black p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
               <p className="text-4xl font-black">2,500+</p>
-              <p className="text-black font-bold mt-2">Happy Creators</p>
+              <p className="text-black font-bold mt-2">Happy Business Owners</p>
             </div>
           </div>
         </div>
@@ -182,7 +200,7 @@ const App: React.FC = () => {
               <div className="mt-auto">
                 <div className="border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
                   <Image
-                    src="https://public.readdy.ai/ai/img_res/8e79301944065e1b7c3a8fc76c454bac.jpg"
+                    src="/images/landing/long_tail_keyword.png"
                     alt="Keyword Discovery"
                     width={500}
                     height={300}
@@ -208,7 +226,7 @@ const App: React.FC = () => {
               <div className="mt-auto">
                 <div className="border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
                   <Image
-                    src="https://public.readdy.ai/ai/img_res/5741e0b29842cb830bcec9914af1308a.jpg"
+                    src="/images/landing/automate_video_gen.png"
                     alt="Automated Video Creation"
                     width={500}
                     height={300}
@@ -234,7 +252,7 @@ const App: React.FC = () => {
               <div className="mt-auto">
                 <div className="border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
                   <Image
-                    src="https://public.readdy.ai/ai/img_res/4c6898a238b6401d031f0738b482adc8.jpg"
+                    src="/images/landing/ai_seo.png"
                     alt="AI SEO Optimization"
                     width={500}
                     height={300}
@@ -887,7 +905,7 @@ const App: React.FC = () => {
             </Card>
 
             <Card className="p-8 border-4 border-black rounded-none shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] bg-[#fcd40b] flex flex-col relative hover:translate-y-2 hover:translate-x-2 hover:shadow-none transition-all transform-gpu scale-105 z-10">
-              <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-black text-white px-6 py-2 text-xl font-black border-4 border-black">
+              <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-black text-white px-6 py-2 text-lg font-black border-4 border-black">
                 Most Popular
               </div>
               <div className="mb-8">
