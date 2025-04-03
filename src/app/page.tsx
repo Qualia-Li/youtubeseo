@@ -1396,12 +1396,6 @@ const App: React.FC = () => {
                 Cookies
               </a>
             </div>
-            <div className="mt-4 md:mt-0 flex items-center space-x-4">
-              <div className="text-gray-500">Secure payment with</div>
-              <i className="fab fa-cc-visa text-xl text-gray-400"></i>
-              <i className="fab fa-cc-mastercard text-xl text-gray-400"></i>
-              <i className="fab fa-cc-paypal text-xl text-gray-400"></i>
-            </div>
           </div>
         </div>
       </footer>
