@@ -28,7 +28,7 @@ const App: React.FC = () => {
                 YouTubeSEO.ai
               </div>
             </div>
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden lg:flex space-x-8">
               <a
                 href="#features"
                 className="text-black hover:underline font-bold cursor-pointer whitespace-nowrap text-xl"
@@ -57,7 +57,7 @@ const App: React.FC = () => {
             <div className="flex items-center space-x-4">
               <Button
                 variant="outline"
-                className="bg-white border-4 border-black rounded-none text-black font-bold text-lg px-6 py-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all whitespace-nowrap"
+                className="hidden md:flex bg-white border-4 border-black rounded-none text-black font-bold text-lg px-6 py-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all whitespace-nowrap"
               >
                 Log In
               </Button>
@@ -183,7 +183,7 @@ const App: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid lg:grid-cols-3 gap-12">
             <Card className="p-8 border-4 border-black rounded-none shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all bg-[#fcd40b]">
               <div className="h-20 w-20 bg-white rounded-none border-4 border-black flex items-center justify-center mb-8 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
                 <span className="text-3xl mr-1">🔍</span>
@@ -805,10 +805,6 @@ const App: React.FC = () => {
                 </div>
               </CarouselItem>
             </CarouselContent>
-            <div className="flex justify-center mt-10">
-              <CarouselPrevious className="static transform-none mx-4 bg-white border-4 border-black rounded-none text-black font-bold text-lg px-6 py-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all cursor-pointer whitespace-nowrap" />
-              <CarouselNext className="static transform-none mx-4 bg-[#fcd40b] border-4 border-black rounded-none text-black font-bold text-lg px-6 py-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all cursor-pointer whitespace-nowrap" />
-            </div>
           </Carousel>
 
           <div className="mt-20 text-center">
@@ -849,7 +845,7 @@ const App: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-10">
+          <div className="grid lg:grid-cols-3 gap-10 gap-y-20">
             <Card className="p-8 border-4 border-black rounded-none shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] bg-white flex flex-col hover:translate-y-2 hover:translate-x-2 hover:shadow-none transition-all">
               <div className="mb-8">
                 <h3 className="text-3xl font-black mb-2 text-black">Starter</h3>
@@ -897,7 +893,7 @@ const App: React.FC = () => {
             </Card>
 
             <Card className="p-8 border-4 border-black rounded-none shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] bg-[#fcd40b] flex flex-col relative hover:translate-y-2 hover:translate-x-2 hover:shadow-none transition-all transform-gpu scale-105 z-10">
-              <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-black text-white px-6 py-2 text-lg font-black border-4 border-black">
+              <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-black text-white px-4 py-2 text-lg font-black border-4 border-black">
                 Most Popular
               </div>
               <div className="mb-8">
@@ -1193,7 +1189,7 @@ const App: React.FC = () => {
       {/* Footer */}
       <footer className="bg-black text-white pt-24 pb-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-16 mb-16">
+          <div className="grid md:grid-cols-3 gap-16 mb-16">
             <div>
               <div className="text-3xl font-black text-[#fcd40b] mb-8">
                 YouTubeSEO.ai
@@ -1300,7 +1296,7 @@ const App: React.FC = () => {
               </ul>
             </div>
 
-            <div>
+            {/* <div>
               <h3 className="font-black text-2xl mb-8 text-white">Subscribe</h3>
               <p className="text-xl text-white mb-6 font-medium">
                 Get the latest news and articles to your inbox every month.
@@ -1315,7 +1311,7 @@ const App: React.FC = () => {
                   Subscribe
                 </Button>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="pt-12 border-t-4 border-[#fcd40b] flex flex-col md:flex-row justify-between items-center">
