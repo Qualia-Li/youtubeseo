@@ -101,15 +101,15 @@ const App: React.FC = () => {
               <ul className="list-none space-y-3">
                 <li className="flex items-start">
                   <Search className="h-8 w-8 mr-3 flex-shrink-0 mt-1" />
-                  <span>Discover untapped long-tail keywords</span>
+                  <span className="mt-1">Discover untapped long-tail keywords</span>
                 </li>
                 <li className="flex items-start">
                   <Video className="h-8 w-8 mr-3 flex-shrink-0 mt-1" />
-                  <span>Automatically create SEO-optimized YouTube videos</span>
+                  <span className="mt-1">Automatically create SEO-optimized YouTube videos</span>
                 </li>
                 <li className="flex items-start">
                   <Bot className="h-8 w-8 mr-3 flex-shrink-0 mt-1" />
-                  <span>Win traffic from Google and Perplexity</span>
+                  <span className="mt-1">Win traffic from Google and Perplexity</span>
                 </li>
               </ul>
             </div>
@@ -589,7 +589,7 @@ const App: React.FC = () => {
                           </div>
                         </div>
                         <p className="text-xl text-black font-medium">
-                          &quot;Increased my channel views by 300% in 3 months! The
+                          &quot;Increased my product's traffic by 300% in 3 months! The
                           long-tail keyword discovery tool found niches I never would
                           have considered, and the automated video creation saved me
                           countless hours of work.&quot;
@@ -753,7 +753,7 @@ const App: React.FC = () => {
                     <span className="text-2xl">⭐</span>
                   </div>
                   <p className="text-xl text-black flex-grow font-medium">
-                    "Increased my channel views by 300% in 3 months! The
+                    "Increased my product's traffic by 300% in 3 months! The
                     long-tail keyword discovery tool found niches I never would
                     have considered, and the automated video creation saved me
                     countless hours of work."
@@ -763,7 +763,7 @@ const App: React.FC = () => {
                       <div>
                         <p className="font-black text-3xl">+300%</p>
                         <p className="text-black text-lg font-bold">
-                          Channel Growth
+                          Product Traffic
                         </p>
                       </div>
                       <div>
@@ -856,7 +856,7 @@ const App: React.FC = () => {
               Simple, Transparent Pricing
             </h2>
             <p className="text-2xl text-black max-w-3xl mx-auto font-medium">
-              Choose the plan that's right for your YouTube channel. All plans
+              Choose the plan that's right for your product. All plans
               include our core AI-powered features.
             </p>
           </div>
@@ -914,7 +914,7 @@ const App: React.FC = () => {
               </div>
               <div className="mb-8">
                 <h3 className="text-3xl font-black mb-2 text-black">Professional</h3>
-                <p className="text-xl text-black font-bold">For growing channels</p>
+                <p className="text-xl text-black font-bold">For new products</p>
               </div>
               <div className="mb-8">
                 <span className="text-6xl font-black text-black">$129</span>
@@ -1072,7 +1072,7 @@ const App: React.FC = () => {
                     </div>
                     <div>
                       <Input
-                        placeholder="YouTube Channel URL (optional)"
+                        placeholder="Product URL (optional)"
                         className="bg-white border-4 border-black text-black placeholder:text-gray-500 py-6 rounded-none text-xl font-medium shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
                       />
                     </div>
