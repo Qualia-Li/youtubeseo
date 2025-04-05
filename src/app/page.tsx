@@ -32,6 +32,7 @@ import {
   Brain,
   Check 
 } from "lucide-react";
+import Footer from "@/components/Footer";
 
 const App: React.FC = () => {
   return (
@@ -1329,49 +1330,10 @@ const App: React.FC = () => {
                 </li>
               </ul>
             </div>
-
-            {/* <div>
-              <h3 className="font-black text-2xl mb-8 text-white">Subscribe</h3>
-              <p className="text-xl text-white mb-6 font-medium">
-                Get the latest news and articles to your inbox every month.
-              </p>
-              <div className="flex">
-                <Input
-                  placeholder="Your email"
-                  type="email"
-                  className="bg-white border-4 border-black text-black placeholder:text-gray-500 py-6 rounded-none text-xl font-medium border-r-0"
-                />
-                <Button className="bg-[#fcd40b] border-4 border-black text-black font-black text-xl rounded-none px-6 whitespace-nowrap hover:bg-[#fcd40b]/80 cursor-pointer">
-                  Subscribe
-                </Button>
-              </div>
-            </div> */}
           </div>
 
-          <div className="pt-12 border-t-4 border-[#fcd40b] flex flex-col md:flex-row justify-between items-center">
-            <div className="text-xl text-white mb-6 md:mb-0 font-bold">
-              © 2024 YouTubeSEO.ai. All rights reserved.
-            </div>
-            <div className="flex space-x-12">
-              <Link
-                href="/terms"
-                className="text-xl font-bold text-white hover:text-[#fcd40b] transition-colors cursor-pointer"
-              >
-                Terms
-              </Link>
-              <Link
-                href="/privacy"
-                className="text-xl font-bold text-white hover:text-[#fcd40b] transition-colors cursor-pointer"
-              >
-                Privacy
-              </Link>
-              <Link
-                href="/cookies"
-                className="text-xl font-bold text-white hover:text-[#fcd40b] transition-colors cursor-pointer"
-              >
-                Cookies
-              </Link>
-            </div>
+          <div className="pt-12 border-t-4 border-[#fcd40b]">
+            <Footer />
           </div>
         </div>
       </footer>
