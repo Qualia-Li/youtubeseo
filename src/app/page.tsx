@@ -15,6 +15,22 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { 
+  Twitter, 
+  Linkedin, 
+  Youtube, 
+  Facebook, 
+  Instagram, 
+  Search, 
+  Video, 
+  Bot, 
+  FileVideo, 
+  FileText, 
+  TrendingUp, 
+  BarChart, 
+  Brain,
+  Check 
+} from "lucide-react";
 
 const App: React.FC = () => {
   return (
@@ -84,15 +100,15 @@ const App: React.FC = () => {
             <div className="text-2xl text-black mb-8 font-medium">
               <ul className="list-none space-y-3">
                 <li className="flex items-start">
-                  <span className="text-2xl mr-3">🔍</span>
+                  <Search className="h-8 w-8 mr-3 flex-shrink-0 mt-1" />
                   <span>Discover untapped long-tail keywords</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-2xl mr-3">🎬</span>
+                  <Video className="h-8 w-8 mr-3 flex-shrink-0 mt-1" />
                   <span>Automatically create SEO-optimized YouTube videos</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-2xl mr-3">🤖</span>
+                  <Bot className="h-8 w-8 mr-3 flex-shrink-0 mt-1" />
                   <span>Win traffic from Google and Perplexity</span>
                 </li>
               </ul>
@@ -186,7 +202,7 @@ const App: React.FC = () => {
           <div className="grid lg:grid-cols-3 gap-12">
             <Card className="p-8 border-4 border-black rounded-none shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all bg-[#fcd40b]">
               <div className="h-20 w-20 bg-white rounded-none border-4 border-black flex items-center justify-center mb-8 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                <span className="text-3xl mr-1">🔍</span>
+                <Search className="h-10 w-10" />
               </div>
               <h3 className="text-3xl font-black mb-4 text-black">
                 Long-tail Keyword Discovery
@@ -211,7 +227,7 @@ const App: React.FC = () => {
 
             <Card className="p-8 border-4 border-black rounded-none shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all bg-white">
               <div className="h-20 w-20 bg-[#fcd40b] rounded-none border-4 border-black flex items-center justify-center mb-8 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                <span className="text-3xl mr-1">🎬</span>
+                <FileVideo className="h-10 w-10" />
               </div>
               <h3 className="text-3xl font-black mb-4 text-black">
                 Automated Video Creation
@@ -236,7 +252,7 @@ const App: React.FC = () => {
 
             <Card className="p-8 border-4 border-black rounded-none shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all bg-[#fcd40b]">
               <div className="h-20 w-20 bg-white rounded-none border-4 border-black flex items-center justify-center mb-8 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                <span className="text-3xl mr-1">🤖</span>
+                <Bot className="h-10 w-10" />
               </div>
               <h3 className="text-3xl font-black mb-4 text-black">
                 AI Search Engine Optimization
@@ -305,7 +321,7 @@ const App: React.FC = () => {
                   </div>
                   <div className="md:w-1/2 md:pl-12 relative">
                     <div className="absolute top-0 left-0 -ml-8 mt-0 h-16 w-16 rounded-none bg-black border-4 border-black hidden md:flex items-center justify-center z-10">
-                      <span className="text-3xl">🔍</span>
+                      <Search className="h-8 w-8 text-white" />
                     </div>
                     <div className="border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
                       <Image
@@ -342,7 +358,7 @@ const App: React.FC = () => {
                   </div>
                   <div className="md:w-1/2 md:pr-12 relative">
                     <div className="absolute top-0 right-0 -mr-8 mt-0 h-16 w-16 rounded-none bg-black border-4 border-black hidden md:flex items-center justify-center z-10">
-                      <span className="text-3xl mr-1">📄</span>
+                      <FileText className="h-8 w-8 text-white" />
                     </div>
                     <div className="border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
                       <Image
@@ -377,7 +393,7 @@ const App: React.FC = () => {
                   </div>
                   <div className="md:w-1/2 md:pl-12 relative">
                     <div className="absolute top-0 left-0 -ml-8 mt-0 h-16 w-16 rounded-none bg-black border-4 border-black hidden md:flex items-center justify-center z-10">
-                      <span className="text-3xl mr-1">🎥</span>
+                      <Video className="h-8 w-8 text-white" />
                     </div>
                     <div className="border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
                       <Image
@@ -412,7 +428,7 @@ const App: React.FC = () => {
                   </div>
                   <div className="md:w-1/2 md:pr-12 relative">
                     <div className="absolute top-0 right-0 -mr-8 mt-0 h-16 w-16 rounded-none bg-black border-4 border-black hidden md:flex items-center justify-center z-10">
-                      <span className="text-3xl mr-1">📈</span>
+                      <TrendingUp className="h-8 w-8 text-white" />
                     </div>
                     <div className="border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
                       <Image
@@ -450,7 +466,7 @@ const App: React.FC = () => {
                   </div>
                   <div className="md:w-1/2 md:pl-12 relative">
                     <div className="absolute top-0 left-0 -ml-8 mt-0 h-16 w-16 rounded-none bg-black border-4 border-black hidden md:flex items-center justify-center z-10">
-                      <span className="text-3xl mr-1">📊</span>
+                      <BarChart className="h-8 w-8 text-white" />
                     </div>
                     <div className="border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
                       <Image
@@ -491,13 +507,13 @@ const App: React.FC = () => {
                 value="google"
                 className="text-2xl py-2 rounded-none data-[state=active]:bg-[#fcd40b] data-[state=active]:text-black font-bold cursor-pointer whitespace-nowrap data-[state=active]:shadow-none flex items-center justify-center border-r-2 border-black"
               >
-                <span className="mr-3 text-3xl">🔍</span> Google AI
+                <Search className="h-8 w-8 mr-3" /> Google AI
               </TabsTrigger>
               <TabsTrigger
                 value="perplexity"
                 className="text-2xl py-2 rounded-none data-[state=active]:bg-[#fcd40b] data-[state=active]:text-black font-bold cursor-pointer whitespace-nowrap data-[state=active]:shadow-none flex items-center justify-center border-l-2 border-black"
               >
-                <span className="mr-3 text-3xl">🧠</span> Perplexity AI
+                <Brain className="h-8 w-8 mr-3" /> Perplexity AI
               </TabsTrigger>
             </TabsList>
             <TabsContent value="google" className="mt-0">
@@ -510,7 +526,7 @@ const App: React.FC = () => {
                     <ul className="space-y-6">
                       <li className="flex">
                         <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                          <span>✓</span>
+                          <Check className="h-4 w-4" />
                         </div>
                         <p className="text-xl text-black font-medium">
                           <span className="font-black">
@@ -521,7 +537,7 @@ const App: React.FC = () => {
                       </li>
                       <li className="flex">
                         <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                          <span>✓</span>
+                          <Check className="h-4 w-4" />
                         </div>
                         <p className="text-xl text-black font-medium">
                           <span className="font-black">
@@ -532,7 +548,7 @@ const App: React.FC = () => {
                       </li>
                       <li className="flex">
                         <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                          <span>✓</span>
+                          <Check className="h-4 w-4" />
                         </div>
                         <p className="text-xl text-black font-medium">
                           <span className="font-black">
@@ -543,7 +559,7 @@ const App: React.FC = () => {
                       </li>
                       <li className="flex">
                         <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                          <span>✓</span>
+                          <Check className="h-4 w-4" />
                         </div>
                         <p className="text-xl text-black font-medium">
                           <span className="font-black">
@@ -605,7 +621,7 @@ const App: React.FC = () => {
                     <ul className="space-y-6">
                       <li className="flex">
                         <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                          <span>✓</span>
+                          <Check className="h-4 w-4" />
                         </div>
                         <p className="text-xl text-black font-medium">
                           <span className="font-black">
@@ -616,7 +632,7 @@ const App: React.FC = () => {
                       </li>
                       <li className="flex">
                         <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                          <span>✓</span>
+                          <Check className="h-4 w-4" />
                         </div>
                         <p className="text-xl text-black font-medium">
                           <span className="font-black">
@@ -627,7 +643,7 @@ const App: React.FC = () => {
                       </li>
                       <li className="flex">
                         <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                          <span>✓</span>
+                          <Check className="h-4 w-4" />
                         </div>
                         <p className="text-xl text-black font-medium">
                           <span className="font-black">
@@ -639,7 +655,7 @@ const App: React.FC = () => {
                       </li>
                       <li className="flex">
                         <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                          <span>✓</span>
+                          <Check className="h-4 w-4" />
                         </div>
                         <p className="text-xl text-black font-medium">
                           <span className="font-black">
@@ -858,31 +874,31 @@ const App: React.FC = () => {
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <span>✓</span>
+                    <Check className="h-4 w-4" />
                   </div>
                   <span className="text-xl font-medium text-black">5 videos per month</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <span>✓</span>
+                    <Check className="h-4 w-4" />
                   </div>
                   <span className="text-xl font-medium text-black">100 keyword searches</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <span>✓</span>
+                    <Check className="h-4 w-4" />
                   </div>
                   <span className="text-xl font-medium text-black">Basic AI optimization</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <span>✓</span>
+                    <Check className="h-4 w-4" />
                   </div>
                   <span className="text-xl font-medium text-black">Standard video quality</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <span>✓</span>
+                    <Check className="h-4 w-4" />
                   </div>
                   <span className="text-xl font-medium text-black">Email support</span>
                 </li>
@@ -907,37 +923,37 @@ const App: React.FC = () => {
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-white border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <span>✓</span>
+                    <Check className="h-4 w-4" />
                   </div>
                   <span className="text-xl font-medium text-black">20 videos per month</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-white border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <span className="text-black">✓</span>
+                    <Check className="h-4 w-4" />
                   </div>
                   <span className="text-xl font-medium text-black">Unlimited keyword searches</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-white border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <span className="text-black">✓</span>
+                    <Check className="h-4 w-4" />
                   </div>
                   <span className="text-xl font-medium text-black">Advanced AI optimization</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-white border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <span className="text-black">✓</span>
+                    <Check className="h-4 w-4" />
                   </div>
                   <span className="text-xl font-medium text-black">HD video quality</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-white border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <span className="text-black">✓</span>
+                    <Check className="h-4 w-4" />
                   </div>
                   <span className="text-xl font-medium text-black">Priority support</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-white border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <span className="text-black">✓</span>
+                    <Check className="h-4 w-4" />
                   </div>
                   <span className="text-xl font-medium text-black">Performance analytics</span>
                 </li>
@@ -959,37 +975,37 @@ const App: React.FC = () => {
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <span className="text-black">✓</span>
+                    <Check className="h-4 w-4" />
                   </div>
                   <span className="text-xl font-medium text-black">50 videos per month</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <span className="text-black">✓</span>
+                    <Check className="h-4 w-4" />
                   </div>
                   <span className="text-xl font-medium text-black">Unlimited keyword searches</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <span className="text-black">✓</span>
+                    <Check className="h-4 w-4" />
                   </div>
                   <span className="text-xl font-medium text-black">Premium AI optimization</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <span className="text-black">✓</span>
+                    <Check className="h-4 w-4" />
                   </div>
                   <span className="text-xl font-medium text-black">4K video quality</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <span className="text-black">✓</span>
+                    <Check className="h-4 w-4" />
                   </div>
                   <span className="text-xl font-medium text-black">Dedicated account manager</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <span className="text-black">✓</span>
+                    <Check className="h-4 w-4" />
                   </div>
                   <span className="text-xl font-medium text-black">Advanced analytics & API access</span>
                 </li>
@@ -1108,9 +1124,6 @@ const App: React.FC = () => {
                 <h3 className="text-3xl font-black text-black">
                   How does the automated video creation work?
                 </h3>
-                <div className="h-12 w-12 bg-[#fcd40b] rounded-none border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                  <span className="text-2xl">🔽</span>
-                </div>
               </div>
               <div className="mt-6">
                 <p className="text-xl text-black font-medium">
@@ -1128,9 +1141,6 @@ const App: React.FC = () => {
                 <h3 className="text-3xl font-black text-black">
                   What makes your keyword research different?
                 </h3>
-                <div className="h-12 w-12 bg-white rounded-none border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                  <span className="text-2xl">🔽</span>
-                </div>
               </div>
               <div className="mt-6">
                 <p className="text-xl text-black font-medium">
@@ -1148,9 +1158,6 @@ const App: React.FC = () => {
                 <h3 className="text-3xl font-black text-black">
                   How do you optimize for AI search engines?
                 </h3>
-                <div className="h-12 w-12 bg-[#fcd40b] rounded-none border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                  <span className="text-2xl">🔽</span>
-                </div>
               </div>
               <div className="mt-6">
                 <p className="text-xl text-black font-medium">
@@ -1168,9 +1175,6 @@ const App: React.FC = () => {
                 <h3 className="text-3xl font-black text-black">
                   Can I customize the videos to match my brand?
                 </h3>
-                <div className="h-12 w-12 bg-white rounded-none border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                  <span className="text-2xl">🔽</span>
-                </div>
               </div>
               <div className="mt-6">
                 <p className="text-xl text-black font-medium">
@@ -1188,9 +1192,6 @@ const App: React.FC = () => {
                 <h3 className="text-3xl font-black text-black">
                   How long does it take to create a video?
                 </h3>
-                <div className="h-12 w-12 bg-[#fcd40b] rounded-none border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                  <span className="text-2xl">🔽</span>
-                </div>
               </div>
               <div className="mt-6">
                 <p className="text-xl text-black font-medium">
@@ -1223,19 +1224,31 @@ const App: React.FC = () => {
                   href="#"
                   className="h-12 w-12 bg-[#fcd40b] text-black rounded-none border-2 border-[#fcd40b] flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(252,212,11,0.3)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all cursor-pointer"
                 >
-                  <span className="text-xl">𝕏</span>
+                  <Twitter className="h-6 w-6" />
                 </a>
                 <a
                   href="#"
                   className="h-12 w-12 bg-[#fcd40b] text-black rounded-none border-2 border-[#fcd40b] flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(252,212,11,0.3)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all cursor-pointer"
                 >
-                  <span className="text-xl">🔗</span>
+                  <Linkedin className="h-6 w-6" />
                 </a>
                 <a
                   href="#"
                   className="h-12 w-12 bg-[#fcd40b] text-black rounded-none border-2 border-[#fcd40b] flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(252,212,11,0.3)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all cursor-pointer"
                 >
-                  <span className="text-xl">▶️</span>
+                  <Youtube className="h-6 w-6" />
+                </a>
+                <a
+                  href="#"
+                  className="h-12 w-12 bg-[#fcd40b] text-black rounded-none border-2 border-[#fcd40b] flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(252,212,11,0.3)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all cursor-pointer"
+                >
+                  <Instagram className="h-6 w-6" />
+                </a>
+                <a
+                  href="#"
+                  className="h-12 w-12 bg-[#fcd40b] text-black rounded-none border-2 border-[#fcd40b] flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(252,212,11,0.3)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all cursor-pointer"
+                >
+                  <Facebook className="h-6 w-6" />
                 </a>
               </div>
             </div>
