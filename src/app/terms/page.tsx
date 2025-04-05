@@ -3,59 +3,13 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 const TermsPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-white text-black pt-32 pb-16">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#fcd40b] border-b-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            <div className="flex items-center">
-              <Link href="/" className="text-3xl font-black text-black">
-                YouTubeSEO.ai
-              </Link>
-            </div>
-            <div className="hidden lg:flex space-x-8">
-              <Link
-                href="/#features"
-                className="text-black hover:underline font-bold cursor-pointer whitespace-nowrap text-xl"
-              >
-                Features
-              </Link>
-              <Link
-                href="/#how-it-works"
-                className="text-black hover:underline font-bold cursor-pointer whitespace-nowrap text-xl"
-              >
-                How It Works
-              </Link>
-              <Link
-                href="/#ai-benefits"
-                className="text-black hover:underline font-bold cursor-pointer whitespace-nowrap text-xl"
-              >
-                AI Benefits
-              </Link>
-              <Link
-                href="/#testimonials"
-                className="text-black hover:underline font-bold cursor-pointer whitespace-nowrap text-xl"
-              >
-                Testimonials
-              </Link>
-            </div>
-            <div className="flex items-center space-x-4">
-              <Button
-                variant="outline"
-                className="hidden md:flex bg-white border-4 border-black rounded-none text-black font-bold text-lg px-6 py-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all whitespace-nowrap"
-              >
-                Log In
-              </Button>
-              <Button className="bg-black border-4 border-black rounded-none text-white font-bold text-lg px-6 py-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all cursor-pointer whitespace-nowrap">
-                Get Started
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Header />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link href="/">
