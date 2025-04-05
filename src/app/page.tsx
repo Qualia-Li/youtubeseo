@@ -15,6 +15,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Link from "next/link";
 import { 
   Twitter, 
   Linkedin, 
@@ -1082,19 +1083,19 @@ const App: React.FC = () => {
                   </div>
                   <div className="mt-6 text-center text-lg font-medium text-black">
                     By signing up, you agree to our{" "}
-                    <a
-                      href="#"
+                    <Link
+                      href="/terms"
                       className="font-bold border-b-4 border-[#fcd40b] hover:bg-[#fcd40b] cursor-pointer"
                     >
                       Terms
-                    </a>{" "}
+                    </Link>{" "}
                     and{" "}
-                    <a
-                      href="#"
+                    <Link
+                      href="/privacy"
                       className="font-bold border-b-4 border-[#fcd40b] hover:bg-[#fcd40b] cursor-pointer"
                     >
                       Privacy Policy
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </Card>
@@ -1220,36 +1221,36 @@ const App: React.FC = () => {
                 for both traditional and AI search engines.
               </p>
               <div className="flex space-x-6">
-                <a
+                <Link
                   href="#"
                   className="h-12 w-12 bg-[#fcd40b] text-black rounded-none border-2 border-[#fcd40b] flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(252,212,11,0.3)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all cursor-pointer"
                 >
                   <Twitter className="h-6 w-6" />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="h-12 w-12 bg-[#fcd40b] text-black rounded-none border-2 border-[#fcd40b] flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(252,212,11,0.3)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all cursor-pointer"
                 >
                   <Linkedin className="h-6 w-6" />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="h-12 w-12 bg-[#fcd40b] text-black rounded-none border-2 border-[#fcd40b] flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(252,212,11,0.3)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all cursor-pointer"
                 >
                   <Youtube className="h-6 w-6" />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="h-12 w-12 bg-[#fcd40b] text-black rounded-none border-2 border-[#fcd40b] flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(252,212,11,0.3)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all cursor-pointer"
                 >
                   <Instagram className="h-6 w-6" />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="h-12 w-12 bg-[#fcd40b] text-black rounded-none border-2 border-[#fcd40b] flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(252,212,11,0.3)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all cursor-pointer"
                 >
                   <Facebook className="h-6 w-6" />
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -1257,36 +1258,36 @@ const App: React.FC = () => {
               <h3 className="font-black text-2xl mb-8 text-white">Product</h3>
               <ul className="space-y-4">
                 <li>
-                  <a
+                  <Link
                     href="#features"
                     className="text-xl font-medium text-white hover:text-[#fcd40b] hover:underline transition-colors cursor-pointer"
                   >
                     Features
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-xl font-medium text-white hover:text-[#fcd40b] hover:underline transition-colors cursor-pointer"
                   >
                     Pricing
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-xl font-medium text-white hover:text-[#fcd40b] hover:underline transition-colors cursor-pointer"
                   >
                     Case Studies
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-xl font-medium text-white hover:text-[#fcd40b] hover:underline transition-colors cursor-pointer"
                   >
                     Reviews
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -1295,36 +1296,36 @@ const App: React.FC = () => {
               <h3 className="font-black text-2xl mb-8 text-white">Company</h3>
               <ul className="space-y-4">
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/about-us"
                     className="text-xl font-medium text-white hover:text-[#fcd40b] hover:underline transition-colors cursor-pointer"
                   >
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/careers"
                     className="text-xl font-medium text-white hover:text-[#fcd40b] hover:underline transition-colors cursor-pointer"
                   >
                     Careers
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-xl font-medium text-white hover:text-[#fcd40b] hover:underline transition-colors cursor-pointer"
                   >
                     Blog
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-xl font-medium text-white hover:text-[#fcd40b] hover:underline transition-colors cursor-pointer"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -1352,24 +1353,24 @@ const App: React.FC = () => {
               © 2024 YouTubeSEO.ai. All rights reserved.
             </div>
             <div className="flex space-x-12">
-              <a
-                href="#"
+              <Link
+                href="/terms"
                 className="text-xl font-bold text-white hover:text-[#fcd40b] transition-colors cursor-pointer"
               >
                 Terms
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="/privacy"
                 className="text-xl font-bold text-white hover:text-[#fcd40b] transition-colors cursor-pointer"
               >
                 Privacy
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="/cookies"
                 className="text-xl font-bold text-white hover:text-[#fcd40b] transition-colors cursor-pointer"
               >
                 Cookies
-              </a>
+              </Link>
             </div>
           </div>
         </div>
