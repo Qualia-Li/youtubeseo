@@ -32,6 +32,7 @@ import {
 } from "lucide-react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import KeywordDistributionChart from "@/components/KeywordDistributionChart";
 
 const App: React.FC = () => {
   return (
@@ -49,7 +50,7 @@ const App: React.FC = () => {
               AI-Powered
             </Badge>
             <h1 className="text-5xl font-black tracking-tight mb-6 text-black">
-              Show Your Product on YouTube for Every Keyword
+              AI YouTube Creator <br/>for Every Keyword
             </h1>
             <div className="text-2xl text-black mb-8 font-medium">
               <ul className="list-none space-y-3">
@@ -229,6 +230,26 @@ const App: React.FC = () => {
               </div>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* Keyword Distribution Chart */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <Badge className="mb-6 bg-[#fcd40b] text-black hover:bg-[#fcd40b]/80 font-bold border-2 border-black text-lg px-4 py-2 rounded-none shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] cursor-pointer">
+              Keyword Strategy
+            </Badge>
+            <h2 className="text-5xl font-black tracking-tight mb-6">
+              Target the Long Tail for Maximum ROI
+            </h2>
+            <p className="text-2xl text-black max-w-3xl mx-auto font-medium">
+              Our AI allows you to capture high-value traffic across thousands of specific long-tail keywords
+              that your competitors can't target.
+            </p>
+          </div>
+          
+          <KeywordDistributionChart />
         </div>
       </section>
 

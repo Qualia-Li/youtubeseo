@@ -152,39 +152,49 @@ const StaticKeywordChart = () => {
   
   return (
     <div className="w-full h-[700px] relative mt-10">
-      <div className="absolute -left-16 top-1/2 transform -rotate-90 font-bold text-lg">
+      {/* <div className="absolute -left-16 top-1/2 transform -rotate-90 font-bold text-lg">
         Keyword Total Value
-      </div>
-      
+      </div> */}
+
       <div className="absolute bottom-[-40px] left-1/2 transform -translate-x-1/2 font-bold text-lg">
-        Number of Keywords
+          Keywords
       </div>
-      
+
       <div className="w-full h-full relative bg-white border-4 border-black">
-        
         {/* Main Curve - Volume vs Keywords with better visibility */}
         <div className="absolute top-0 left-0 w-full h-full">
-          <svg width="100%" height="100%" viewBox="0 0 1000 800" preserveAspectRatio="none">
+          <svg
+            width="100%"
+            height="100%"
+            viewBox="0 0 1000 800"
+            preserveAspectRatio="none"
+          >
             {/* Main curve path */}
-            <path 
-              d="M0,20 C200,100 300,500 1000,760" 
-              fill="none" 
-              stroke="black" 
-              strokeWidth="6" 
+            <path
+              d="M0,20 C200,100 300,500 1000,760"
+              fill="none"
+              stroke="black"
+              strokeWidth="6"
               strokeDasharray="none"
               className="opacity-80"
             />
-            
+
             {/* Fill under the curve */}
-            <path 
-              d="M0,20 C200,100 300,500 1000,760 L1000,800 L0,800 Z" 
-              fill="url(#volumeGradient)" 
+            <path
+              d="M0,20 C200,100 300,500 1000,760 L1000,800 L0,800 Z"
+              fill="url(#volumeGradient)"
               className="opacity-20"
             />
-            
+
             {/* Gradient for fill */}
             <defs>
-              <linearGradient id="volumeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <linearGradient
+                id="volumeGradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
                 <stop offset="0%" stopColor="#f87171" />
                 <stop offset="25%" stopColor="#f87171" />
                 <stop offset="40%" stopColor="#60a5fa" />
@@ -192,127 +202,154 @@ const StaticKeywordChart = () => {
                 <stop offset="100%" stopColor="#fcd34d" />
               </linearGradient>
             </defs>
-            
+
             {/* Human Creator Cost Line */}
-            <line 
-              x1="0" y1="300" 
-              x2="1000" y2="300" 
-              stroke="#ef4444" 
-              strokeWidth="4" 
+            <line
+              x1="0"
+              y1="300"
+              x2="1000"
+              y2="300"
+              stroke="#ef4444"
+              strokeWidth="4"
               strokeDasharray="15,5"
             />
             <text x="20" y="290" fill="#b91c1c" fontWeight="bold" fontSize="16">
               Human Creator Cost
             </text>
-            
+
             {/* AI Creator Cost Line - lower */}
-            <line 
-              x1="0" y1="650" 
-              x2="1000" y2="650" 
-              stroke="#3b82f6" 
-              strokeWidth="4" 
+            <line
+              x1="0"
+              y1="650"
+              x2="1000"
+              y2="650"
+              stroke="#3b82f6"
+              strokeWidth="4"
               strokeDasharray="15,5"
             />
             <text x="20" y="640" fill="#1d4ed8" fontWeight="bold" fontSize="16">
               AI Creator Cost
             </text>
-            
+
             {/* Profit Zone - highlighted area between curve and human cost for tail */}
-            <path 
-              d="M0,20 C100,70 180,150 300,300 L300,300 L0,300 Z" 
-              fill="#ef4444" 
-              className="opacity-30"
-            />
-            <text x="100" y="200" fill="#b91c1c" fontWeight="bold" fontSize="16">
+            <text x="50" y="200" fill="#b91c1c" fontWeight="bold" fontSize="16">
               Profit Zone for
             </text>
-            <text x="100" y="225" fill="#b91c1c" fontWeight="bold" fontSize="16">
+            <text x="50" y="225" fill="#b91c1c" fontWeight="bold" fontSize="16">
               Human Creators
             </text>
-            
+
+            {/* Profit Zone - highlighted area between curve and human cost for tail */}
+            <text x="400" y="550" fill="#1d4ed8" fontWeight="bold" fontSize="16">
+              Profit Zone for
+            </text>
+            <text x="400" y="575" fill="#1d4ed8" fontWeight="bold" fontSize="16">
+              Human Creators
+            </text>
+
             {/* Clickable Keyword Points for Short Tail */}
-            <circle 
-              cx="50" cy="60" r="10" 
-              fill="#b91c1c" 
+            <circle
+              cx="50"
+              cy="60"
+              r="10"
+              fill="#b91c1c"
               className="cursor-pointer hover:stroke-black hover:stroke-2 transition-all"
               onMouseEnter={() => setHoveredKeyword(keywordData[0])}
               onMouseLeave={() => setHoveredKeyword(null)}
             />
-            
-            <circle 
-              cx="150" cy="130" r="10" 
-              fill="#b91c1c" 
+
+            <circle
+              cx="150"
+              cy="130"
+              r="10"
+              fill="#b91c1c"
               className="cursor-pointer hover:stroke-black hover:stroke-2 transition-all"
               onMouseEnter={() => setHoveredKeyword(keywordData[1])}
               onMouseLeave={() => setHoveredKeyword(null)}
             />
-            
+
             {/* Clickable Keyword Points for Mid Tail */}
-            <circle 
-              cx="300" cy="300" r="10" 
-              fill="#1d4ed8" 
+            <circle
+              cx="300"
+              cy="300"
+              r="10"
+              fill="#1d4ed8"
               className="cursor-pointer hover:stroke-black hover:stroke-2 transition-all"
               onMouseEnter={() => setHoveredKeyword(keywordData[2])}
               onMouseLeave={() => setHoveredKeyword(null)}
             />
-            
-            <circle 
-              cx="450" cy="450" r="10" 
-              fill="#1d4ed8" 
+
+            <circle
+              cx="450"
+              cy="450"
+              r="10"
+              fill="#1d4ed8"
               className="cursor-pointer hover:stroke-black hover:stroke-2 transition-all"
               onMouseEnter={() => setHoveredKeyword(keywordData[3])}
               onMouseLeave={() => setHoveredKeyword(null)}
             />
-            
-            <circle 
-              cx="550" cy="550" r="10" 
-              fill="#1d4ed8" 
+
+            <circle
+              cx="550"
+              cy="550"
+              r="10"
+              fill="#1d4ed8"
               className="cursor-pointer hover:stroke-black hover:stroke-2 transition-all"
               onMouseEnter={() => setHoveredKeyword(keywordData[9])}
               onMouseLeave={() => setHoveredKeyword(null)}
             />
-            
+
             {/* Clickable Keyword Points for Long Tail */}
-            <circle 
-              cx="650" cy="600" r="10" 
-              fill="#b45309" 
+            <circle
+              cx="650"
+              cy="600"
+              r="10"
+              fill="#b45309"
               className="cursor-pointer hover:stroke-black hover:stroke-2 transition-all"
               onMouseEnter={() => setHoveredKeyword(keywordData[4])}
               onMouseLeave={() => setHoveredKeyword(null)}
             />
-            
-            <circle 
-              cx="750" cy="650" r="10" 
-              fill="#b45309" 
+
+            <circle
+              cx="750"
+              cy="650"
+              r="10"
+              fill="#b45309"
               className="cursor-pointer hover:stroke-black hover:stroke-2 transition-all"
               onMouseEnter={() => setHoveredKeyword(keywordData[5])}
               onMouseLeave={() => setHoveredKeyword(null)}
             />
-            
-            <circle 
-              cx="850" cy="700" r="10" 
-              fill="#b45309" 
+
+            <circle
+              cx="850"
+              cy="700"
+              r="10"
+              fill="#b45309"
               className="cursor-pointer hover:stroke-black hover:stroke-2 transition-all"
               onMouseEnter={() => setHoveredKeyword(keywordData[11])}
               onMouseLeave={() => setHoveredKeyword(null)}
             />
-            
+
             {/* Keyword Popup on Hover */}
             {hoveredKeyword && (
               <g>
-                <rect 
-                  x="350" y="100" 
-                  width="300" height="150" 
-                  fill="white" 
-                  stroke="black" 
+                <rect
+                  x="350"
+                  y="100"
+                  width="300"
+                  height="150"
+                  fill="white"
+                  stroke="black"
                   strokeWidth="2"
-                  rx="5" ry="5"
+                  rx="5"
+                  ry="5"
                 />
                 <text x="365" y="130" fontWeight="bold" fontSize="16">
                   "{hoveredKeyword.text}"
                 </text>
                 <text x="365" y="160" fontSize="14">
-                  {hoveredKeyword.searchVolume.toLocaleString()} monthly searches
+                  {hoveredKeyword.searchVolume.toLocaleString()} monthly
+                  searches
                 </text>
                 <text x="365" y="185" fontSize="14">
                   Competition: {hoveredKeyword.competition}
@@ -328,19 +365,19 @@ const StaticKeywordChart = () => {
           </svg>
         </div>
       </div>
-      
+
       {/* Axes */}
       <div className="absolute left-0 top-0 h-full border-l-4 border-black"></div>
       <div className="absolute left-0 bottom-0 w-full border-b-4 border-black"></div>
-      
+
       {/* Y-Axis marks */}
-      <div className="absolute left-[-10px] top-0 font-bold">High</div>
-      <div className="absolute left-[-10px] bottom-[-10px] font-bold">Low</div>
-      
+      {/* <div className="absolute left-[-10px] top-0 font-bold">High</div>
+      <div className="absolute left-[-10px] bottom-[-10px] font-bold">Low</div> */}
+
       {/* X-Axis marks */}
-      <div className="absolute left-0 bottom-[-30px] font-bold">Low</div>
-      <div className="absolute right-0 bottom-[-30px] font-bold">High</div>
-      
+      {/* <div className="absolute left-0 bottom-[-30px] font-bold">Low</div>
+      <div className="absolute right-0 bottom-[-30px] font-bold">High</div> */}
+
       {/* Legend */}
       <div className="absolute top-5 right-5 bg-white p-3 border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
         <div className="text-sm font-bold mb-2">Chart Legend</div>
@@ -426,29 +463,6 @@ const KeywordDistributionChart = () => {
         
         {/* Always render a static chart that works without complex calculations */}
         <StaticKeywordChart />
-        
-        {/* Keyword Info */}
-        <div 
-          className="mt-16 border-4 border-black p-5 rounded-none shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
-          onClick={() => {
-            if (!activeKeyword) {
-              setActiveKeyword(keywordData[5]); // Show an example long-tail keyword
-            } else if (activeKeyword.id === 5) {
-              setActiveKeyword(keywordData[11]); // Cycle to another example
-            } else {
-              setActiveKeyword(null); // Reset
-            }
-          }}
-        >
-          {mounted ? (
-            <KeywordInfoCard hoveredKeyword={activeKeyword} />
-          ) : (
-            <div className="text-center">
-              <h3 className="font-bold text-xl mb-2">Click Here to See Example Keywords</h3>
-              <p className="text-base">See how AI-generated videos can capture high-intent long-tail keywords that most creators ignore</p>
-            </div>
-          )}
-        </div>
         
         <div className="mt-8 bg-[#fcd40b] p-6 rounded-none border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
           <h3 className="font-black text-2xl mb-4">How Our AI Makes the Difference</h3>
