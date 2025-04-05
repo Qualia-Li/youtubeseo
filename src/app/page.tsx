@@ -98,14 +98,14 @@ const App: React.FC = () => {
               </ul>
             </div>
             <div className="flex flex-col sm:flex-row gap-6">
-              <Button className="bg-[#fcd40b] border-4 border-black rounded-none text-black font-bold text-xl py-6 px-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all cursor-pointer whitespace-nowrap">
+              <Button className="bg-[#fcd40b] border-4 border-black rounded-none text-black font-bold text-xl py-6 px-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 hover:bg-[#fcd40b] transition-all cursor-pointer whitespace-nowrap">
                 Boost Your YouTube Presence
               </Button>
               <Button
                 variant="outline"
                 className="bg-white border-4 border-black rounded-none text-black font-bold text-xl py-6 px-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all cursor-pointer whitespace-nowrap"
               >
-                <i className="fas fa-play-circle mr-2"></i> Watch Demo
+                Watch Demo
               </Button>
             </div>
             <div className="mt-12 flex items-center">
@@ -187,7 +187,6 @@ const App: React.FC = () => {
             <Card className="p-8 border-4 border-black rounded-none shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all bg-[#fcd40b]">
               <div className="h-20 w-20 bg-white rounded-none border-4 border-black flex items-center justify-center mb-8 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
                 <span className="text-3xl mr-1">🔍</span>
-                <i className="fas fa-search text-3xl text-black"></i>
               </div>
               <h3 className="text-3xl font-black mb-4 text-black">
                 Long-tail Keyword Discovery
@@ -213,7 +212,6 @@ const App: React.FC = () => {
             <Card className="p-8 border-4 border-black rounded-none shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all bg-white">
               <div className="h-20 w-20 bg-[#fcd40b] rounded-none border-4 border-black flex items-center justify-center mb-8 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
                 <span className="text-3xl mr-1">🎬</span>
-                <i className="fas fa-film text-3xl text-black"></i>
               </div>
               <h3 className="text-3xl font-black mb-4 text-black">
                 Automated Video Creation
@@ -239,7 +237,6 @@ const App: React.FC = () => {
             <Card className="p-8 border-4 border-black rounded-none shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all bg-[#fcd40b]">
               <div className="h-20 w-20 bg-white rounded-none border-4 border-black flex items-center justify-center mb-8 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
                 <span className="text-3xl mr-1">🤖</span>
-                <i className="fas fa-robot text-3xl text-black"></i>
               </div>
               <h3 className="text-3xl font-black mb-4 text-black">
                 AI Search Engine Optimization
@@ -308,8 +305,7 @@ const App: React.FC = () => {
                   </div>
                   <div className="md:w-1/2 md:pl-12 relative">
                     <div className="absolute top-0 left-0 -ml-8 mt-0 h-16 w-16 rounded-none bg-black border-4 border-black hidden md:flex items-center justify-center z-10">
-                      <span className="text-3xl mr-1">🔍</span>
-                      <i className="fas fa-search text-2xl text-white"></i>
+                      <span className="text-3xl">🔍</span>
                     </div>
                     <div className="border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
                       <Image
@@ -347,7 +343,6 @@ const App: React.FC = () => {
                   <div className="md:w-1/2 md:pr-12 relative">
                     <div className="absolute top-0 right-0 -mr-8 mt-0 h-16 w-16 rounded-none bg-black border-4 border-black hidden md:flex items-center justify-center z-10">
                       <span className="text-3xl mr-1">📄</span>
-                      <i className="fas fa-file-alt text-2xl text-white"></i>
                     </div>
                     <div className="border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
                       <Image
@@ -383,7 +378,6 @@ const App: React.FC = () => {
                   <div className="md:w-1/2 md:pl-12 relative">
                     <div className="absolute top-0 left-0 -ml-8 mt-0 h-16 w-16 rounded-none bg-black border-4 border-black hidden md:flex items-center justify-center z-10">
                       <span className="text-3xl mr-1">🎥</span>
-                      <i className="fas fa-video text-2xl text-white"></i>
                     </div>
                     <div className="border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
                       <Image
@@ -419,7 +413,6 @@ const App: React.FC = () => {
                   <div className="md:w-1/2 md:pr-12 relative">
                     <div className="absolute top-0 right-0 -mr-8 mt-0 h-16 w-16 rounded-none bg-black border-4 border-black hidden md:flex items-center justify-center z-10">
                       <span className="text-3xl mr-1">📈</span>
-                      <i className="fas fa-chart-line text-2xl text-white"></i>
                     </div>
                     <div className="border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
                       <Image
@@ -458,7 +451,6 @@ const App: React.FC = () => {
                   <div className="md:w-1/2 md:pl-12 relative">
                     <div className="absolute top-0 left-0 -ml-8 mt-0 h-16 w-16 rounded-none bg-black border-4 border-black hidden md:flex items-center justify-center z-10">
                       <span className="text-3xl mr-1">📊</span>
-                      <i className="fas fa-chart-bar text-2xl text-white"></i>
                     </div>
                     <div className="border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
                       <Image
@@ -494,18 +486,18 @@ const App: React.FC = () => {
           </div>
 
           <Tabs defaultValue="google" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 mb-10 border-4 border-black rounded-none overflow-hidden shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+            <TabsList className="grid w-full grid-cols-2 mb-10 border-4 border-black rounded-none h-20 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
               <TabsTrigger
                 value="google"
-                className="text-xl py-4 rounded-none data-[state=active]:bg-[#fcd40b] data-[state=active]:text-black font-bold cursor-pointer whitespace-nowrap border-r-4 border-black data-[state=active]:shadow-none"
+                className="text-2xl py-2 rounded-none data-[state=active]:bg-[#fcd40b] data-[state=active]:text-black font-bold cursor-pointer whitespace-nowrap data-[state=active]:shadow-none flex items-center justify-center border-r-2 border-black"
               >
-                <i className="fab fa-google mr-2"></i> Google AI
+                <span className="mr-3 text-3xl">🔍</span> Google AI
               </TabsTrigger>
               <TabsTrigger
                 value="perplexity"
-                className="text-xl py-4 rounded-none data-[state=active]:bg-[#fcd40b] data-[state=active]:text-black font-bold cursor-pointer whitespace-nowrap data-[state=active]:shadow-none"
+                className="text-2xl py-2 rounded-none data-[state=active]:bg-[#fcd40b] data-[state=active]:text-black font-bold cursor-pointer whitespace-nowrap data-[state=active]:shadow-none flex items-center justify-center border-l-2 border-black"
               >
-                <i className="fas fa-brain mr-2"></i> Perplexity AI
+                <span className="mr-3 text-3xl">🧠</span> Perplexity AI
               </TabsTrigger>
             </TabsList>
             <TabsContent value="google" className="mt-0">
@@ -518,7 +510,7 @@ const App: React.FC = () => {
                     <ul className="space-y-6">
                       <li className="flex">
                         <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                          <i className="fas fa-check text-black"></i>
+                          <span>✓</span>
                         </div>
                         <p className="text-xl text-black font-medium">
                           <span className="font-black">
@@ -529,7 +521,7 @@ const App: React.FC = () => {
                       </li>
                       <li className="flex">
                         <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                          <i className="fas fa-check text-black"></i>
+                          <span>✓</span>
                         </div>
                         <p className="text-xl text-black font-medium">
                           <span className="font-black">
@@ -540,7 +532,7 @@ const App: React.FC = () => {
                       </li>
                       <li className="flex">
                         <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                          <i className="fas fa-check text-black"></i>
+                          <span>✓</span>
                         </div>
                         <p className="text-xl text-black font-medium">
                           <span className="font-black">
@@ -551,7 +543,7 @@ const App: React.FC = () => {
                       </li>
                       <li className="flex">
                         <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                          <i className="fas fa-check text-black"></i>
+                          <span>✓</span>
                         </div>
                         <p className="text-xl text-black font-medium">
                           <span className="font-black">
@@ -613,7 +605,7 @@ const App: React.FC = () => {
                     <ul className="space-y-6">
                       <li className="flex">
                         <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                          <i className="fas fa-check text-black"></i>
+                          <span>✓</span>
                         </div>
                         <p className="text-xl text-black font-medium">
                           <span className="font-black">
@@ -624,7 +616,7 @@ const App: React.FC = () => {
                       </li>
                       <li className="flex">
                         <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                          <i className="fas fa-check text-black"></i>
+                          <span>✓</span>
                         </div>
                         <p className="text-xl text-black font-medium">
                           <span className="font-black">
@@ -635,7 +627,7 @@ const App: React.FC = () => {
                       </li>
                       <li className="flex">
                         <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                          <i className="fas fa-check text-black"></i>
+                          <span>✓</span>
                         </div>
                         <p className="text-xl text-black font-medium">
                           <span className="font-black">
@@ -647,7 +639,7 @@ const App: React.FC = () => {
                       </li>
                       <li className="flex">
                         <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                          <i className="fas fa-check text-black"></i>
+                          <span>✓</span>
                         </div>
                         <p className="text-xl text-black font-medium">
                           <span className="font-black">
@@ -738,11 +730,11 @@ const App: React.FC = () => {
                     </div>
                   </div>
                   <div className="mb-6 flex">
-                    <i className="fas fa-star text-2xl"></i>
-                    <i className="fas fa-star text-2xl"></i>
-                    <i className="fas fa-star text-2xl"></i>
-                    <i className="fas fa-star text-2xl"></i>
-                    <i className="fas fa-star text-2xl"></i>
+                    <span className="text-2xl">⭐</span>
+                    <span className="text-2xl">⭐</span>
+                    <span className="text-2xl">⭐</span>
+                    <span className="text-2xl">⭐</span>
+                    <span className="text-2xl">⭐</span>
                   </div>
                   <p className="text-xl text-black flex-grow font-medium">
                     "Increased my channel views by 300% in 3 months! The
@@ -782,11 +774,11 @@ const App: React.FC = () => {
                     </div>
                   </div>
                   <div className="mb-6 flex">
-                    <i className="fas fa-star text-2xl text-[#fcd40b]"></i>
-                    <i className="fas fa-star text-2xl text-[#fcd40b]"></i>
-                    <i className="fas fa-star text-2xl text-[#fcd40b]"></i>
-                    <i className="fas fa-star text-2xl text-[#fcd40b]"></i>
-                    <i className="fas fa-star text-2xl text-[#fcd40b]"></i>
+                    <span className="text-2xl text-[#fcd40b]">⭐</span>
+                    <span className="text-2xl text-[#fcd40b]">⭐</span>
+                    <span className="text-2xl text-[#fcd40b]">⭐</span>
+                    <span className="text-2xl text-[#fcd40b]">⭐</span>
+                    <span className="text-2xl text-[#fcd40b]">⭐</span>
                   </div>
                   <p className="text-xl text-black flex-grow font-medium">
                     "Finally cracked the YouTube algorithm thanks to their
@@ -825,15 +817,15 @@ const App: React.FC = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-10 items-center">
               <div className="flex items-center text-[#fcd40b] hover:text-white transition-colors cursor-pointer border-4 border-[#fcd40b] px-6 py-4 shadow-[4px_4px_0px_0px_rgba(252,212,11,0.5)]">
-                <i className="fab fa-youtube text-4xl mr-3"></i>
+                <span className="text-4xl mr-3">▶️</span>
                 <span className="text-2xl font-black">CreatorStudio</span>
               </div>
               <div className="flex items-center text-white hover:text-[#fcd40b] transition-colors cursor-pointer border-4 border-white px-6 py-4 shadow-[4px_4px_0px_0px_rgba(255,255,255,0.5)]">
-                <i className="fas fa-graduation-cap text-4xl mr-3"></i>
+                <span className="text-4xl mr-3">🎓</span>
                 <span className="text-2xl font-black">EduTech</span>
               </div>
               <div className="flex items-center text-[#fcd40b] hover:text-white transition-colors cursor-pointer border-4 border-[#fcd40b] px-6 py-4 shadow-[4px_4px_0px_0px_rgba(252,212,11,0.5)]">
-                <i className="fas fa-shopping-bag text-4xl mr-3"></i>
+                <span className="text-4xl mr-3">🛍️</span>
                 <span className="text-2xl font-black">RetailGiant</span>
               </div>
             </div>
@@ -870,31 +862,31 @@ const App: React.FC = () => {
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <i className="fas fa-check text-black"></i>
+                    <span>✓</span>
                   </div>
                   <span className="text-xl font-medium text-black">5 videos per month</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <i className="fas fa-check text-black"></i>
+                    <span>✓</span>
                   </div>
                   <span className="text-xl font-medium text-black">100 keyword searches</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <i className="fas fa-check text-black"></i>
+                    <span>✓</span>
                   </div>
                   <span className="text-xl font-medium text-black">Basic AI optimization</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <i className="fas fa-check text-black"></i>
+                    <span>✓</span>
                   </div>
                   <span className="text-xl font-medium text-black">Standard video quality</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <i className="fas fa-check text-black"></i>
+                    <span>✓</span>
                   </div>
                   <span className="text-xl font-medium text-black">Email support</span>
                 </li>
@@ -919,37 +911,37 @@ const App: React.FC = () => {
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-white border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <i className="fas fa-check text-black"></i>
+                    <span>✓</span>
                   </div>
                   <span className="text-xl font-medium text-black">20 videos per month</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-white border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <i className="fas fa-check text-black"></i>
+                    <span className="text-black">✓</span>
                   </div>
                   <span className="text-xl font-medium text-black">Unlimited keyword searches</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-white border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <i className="fas fa-check text-black"></i>
+                    <span className="text-black">✓</span>
                   </div>
                   <span className="text-xl font-medium text-black">Advanced AI optimization</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-white border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <i className="fas fa-check text-black"></i>
+                    <span className="text-black">✓</span>
                   </div>
                   <span className="text-xl font-medium text-black">HD video quality</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-white border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <i className="fas fa-check text-black"></i>
+                    <span className="text-black">✓</span>
                   </div>
                   <span className="text-xl font-medium text-black">Priority support</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-white border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <i className="fas fa-check text-black"></i>
+                    <span className="text-black">✓</span>
                   </div>
                   <span className="text-xl font-medium text-black">Performance analytics</span>
                 </li>
@@ -971,37 +963,37 @@ const App: React.FC = () => {
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <i className="fas fa-check text-black"></i>
+                    <span className="text-black">✓</span>
                   </div>
                   <span className="text-xl font-medium text-black">50 videos per month</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <i className="fas fa-check text-black"></i>
+                    <span className="text-black">✓</span>
                   </div>
                   <span className="text-xl font-medium text-black">Unlimited keyword searches</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <i className="fas fa-check text-black"></i>
+                    <span className="text-black">✓</span>
                   </div>
                   <span className="text-xl font-medium text-black">Premium AI optimization</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <i className="fas fa-check text-black"></i>
+                    <span className="text-black">✓</span>
                   </div>
                   <span className="text-xl font-medium text-black">4K video quality</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <i className="fas fa-check text-black"></i>
+                    <span className="text-black">✓</span>
                   </div>
                   <span className="text-xl font-medium text-black">Dedicated account manager</span>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-none bg-[#fcd40b] border-2 border-black flex items-center justify-center mr-4 mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <i className="fas fa-check text-black"></i>
+                    <span className="text-black">✓</span>
                   </div>
                   <span className="text-xl font-medium text-black">Advanced analytics & API access</span>
                 </li>
@@ -1034,12 +1026,12 @@ const App: React.FC = () => {
                   variant="outline"
                   className="bg-white text-black border-4 border-black rounded-none font-bold text-xl py-6 px-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,0.3)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all cursor-pointer whitespace-nowrap"
                 >
-                  <i className="fas fa-calendar-alt mr-2"></i> Schedule Demo
+                  Schedule Demo
                 </Button>
               </div>
               <div className="mt-10 flex items-center">
                 <div className="mr-4 flex">
-                  <i className="fas fa-shield-alt text-black text-3xl"></i>
+                  <span className="text-3xl text-black">🛡️</span>
                 </div>
                 <p className="text-xl text-black font-bold">
                   14-day money-back guarantee, no questions asked
@@ -1120,7 +1112,7 @@ const App: React.FC = () => {
                 <h3 className="text-xl font-semibold">
                   &quot;How does the automated video creation work?&quot;
                 </h3>
-                <i className="fas fa-chevron-down text-indigo-600"></i>
+                <span>🔽</span>
               </div>
               <div className="mt-4 text-gray-600">
                 Our AI analyzes your target keywords and generates a
@@ -1136,7 +1128,7 @@ const App: React.FC = () => {
                 <h3 className="text-xl font-semibold">
                   What makes your keyword research different?
                 </h3>
-                <i className="fas fa-chevron-down text-indigo-600"></i>
+                <span>🔽</span>
               </div>
               <div className="mt-4 text-gray-600">
                 Our AI doesn&apos;t just find popular keywords—it identifies valuable
@@ -1152,7 +1144,7 @@ const App: React.FC = () => {
                 <h3 className="text-xl font-semibold">
                   How do you optimize for AI search engines?
                 </h3>
-                <i className="fas fa-chevron-down text-indigo-600"></i>
+                <span>🔽</span>
               </div>
               <div className="mt-4 text-gray-600">
                 We structure your content to be easily understood and referenced
@@ -1168,7 +1160,7 @@ const App: React.FC = () => {
                 <h3 className="text-xl font-semibold">
                   Can I customize the videos to match my brand?
                 </h3>
-                <i className="fas fa-chevron-down text-indigo-600"></i>
+                <span>🔽</span>
               </div>
               <div className="mt-4 text-gray-600">
                 Absolutely! You can customize colors, fonts, intro/outro
@@ -1184,7 +1176,7 @@ const App: React.FC = () => {
                 <h3 className="text-xl font-semibold">
                   &quot;How long does it take to create a video?&quot;
                 </h3>
-                <i className="fas fa-chevron-down text-indigo-600"></i>
+                <span>🔽</span>
               </div>
               <div className="mt-4 text-gray-600">
                 &quot;Most videos are ready within 2-4 hours after you approve the
@@ -1215,19 +1207,19 @@ const App: React.FC = () => {
                   href="#"
                   className="h-12 w-12 bg-[#fcd40b] text-black rounded-none border-2 border-[#fcd40b] flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(252,212,11,0.3)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all cursor-pointer"
                 >
-                  <i className="fab fa-twitter text-xl"></i>
+                  <span className="text-xl">𝕏</span>
                 </a>
                 <a
                   href="#"
                   className="h-12 w-12 bg-[#fcd40b] text-black rounded-none border-2 border-[#fcd40b] flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(252,212,11,0.3)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all cursor-pointer"
                 >
-                  <i className="fab fa-linkedin text-xl"></i>
+                  <span className="text-xl">🔗</span>
                 </a>
                 <a
                   href="#"
                   className="h-12 w-12 bg-[#fcd40b] text-black rounded-none border-2 border-[#fcd40b] flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(252,212,11,0.3)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all cursor-pointer"
                 >
-                  <i className="fab fa-youtube text-xl"></i>
+                  <span className="text-xl">▶️</span>
                 </a>
               </div>
             </div>
