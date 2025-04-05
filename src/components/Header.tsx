@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const Header: React.FC = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-black border-b-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black border-b-4 border-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
