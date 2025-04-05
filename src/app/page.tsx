@@ -1102,84 +1102,104 @@ const App: React.FC = () => {
             </p>
           </div>
 
-          <div className="space-y-6">
-            <Card className="p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow rounded-xl">
+          <div className="space-y-12">
+            <Card className="p-8 border-4 border-black rounded-none shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all bg-white">
               <div className="flex justify-between items-start cursor-pointer">
-                <h3 className="text-xl font-semibold">
-                  &quot;How does the automated video creation work?&quot;
+                <h3 className="text-3xl font-black text-black">
+                  How does the automated video creation work?
                 </h3>
-                <span>🔽</span>
+                <div className="h-12 w-12 bg-[#fcd40b] rounded-none border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                  <span className="text-2xl">🔽</span>
+                </div>
               </div>
-              <div className="mt-4 text-gray-600">
-                Our AI analyzes your target keywords and generates a
-                comprehensive script that delivers value to viewers. It then
-                automatically creates visuals, adds voiceovers using
-                natural-sounding AI voices, and edits everything together into a
-                professional video optimized for YouTube and AI search engines.
+              <div className="mt-6">
+                <p className="text-xl text-black font-medium">
+                  Our AI analyzes your target keywords and generates a
+                  comprehensive script that delivers value to viewers. It then
+                  automatically creates visuals, adds voiceovers using
+                  natural-sounding AI voices, and edits everything together into a
+                  professional video optimized for YouTube and AI search engines.
+                </p>
               </div>
             </Card>
 
-            <Card className="p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow rounded-xl">
+            <Card className="p-8 border-4 border-black rounded-none shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all bg-[#fcd40b]">
               <div className="flex justify-between items-start cursor-pointer">
-                <h3 className="text-xl font-semibold">
+                <h3 className="text-3xl font-black text-black">
                   What makes your keyword research different?
                 </h3>
-                <span>🔽</span>
+                <div className="h-12 w-12 bg-white rounded-none border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                  <span className="text-2xl">🔽</span>
+                </div>
               </div>
-              <div className="mt-4 text-gray-600">
-                Our AI doesn&apos;t just find popular keywords—it identifies valuable
-                long-tail keywords with high intent but low competition. We also
-                analyze which keywords are most likely to be featured in AI
-                search results from Google and Perplexity, giving you an edge in
-                the evolving search landscape.
+              <div className="mt-6">
+                <p className="text-xl text-black font-medium">
+                  Our AI doesn&apos;t just find popular keywords—it identifies valuable
+                  long-tail keywords with high intent but low competition. We also
+                  analyze which keywords are most likely to be featured in AI
+                  search results from Google and Perplexity, giving you an edge in
+                  the evolving search landscape.
+                </p>
               </div>
             </Card>
 
-            <Card className="p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow rounded-xl">
+            <Card className="p-8 border-4 border-black rounded-none shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all bg-white">
               <div className="flex justify-between items-start cursor-pointer">
-                <h3 className="text-xl font-semibold">
+                <h3 className="text-3xl font-black text-black">
                   How do you optimize for AI search engines?
                 </h3>
-                <span>🔽</span>
+                <div className="h-12 w-12 bg-[#fcd40b] rounded-none border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                  <span className="text-2xl">🔽</span>
+                </div>
               </div>
-              <div className="mt-4 text-gray-600">
-                We structure your content to be easily understood and referenced
-                by AI systems. This includes creating clear semantic
-                relationships, using question-answer formats that match AI query
-                patterns, and embedding signals that increase the likelihood of
-                your content being cited in AI-generated responses.
+              <div className="mt-6">
+                <p className="text-xl text-black font-medium">
+                  We structure your content to be easily understood and referenced
+                  by AI systems. This includes creating clear semantic
+                  relationships, using question-answer formats that match AI query
+                  patterns, and embedding signals that increase the likelihood of
+                  your content being cited in AI-generated responses.
+                </p>
               </div>
             </Card>
 
-            <Card className="p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow rounded-xl">
+            <Card className="p-8 border-4 border-black rounded-none shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all bg-[#fcd40b]">
               <div className="flex justify-between items-start cursor-pointer">
-                <h3 className="text-xl font-semibold">
+                <h3 className="text-3xl font-black text-black">
                   Can I customize the videos to match my brand?
                 </h3>
-                <span>🔽</span>
+                <div className="h-12 w-12 bg-white rounded-none border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                  <span className="text-2xl">🔽</span>
+                </div>
               </div>
-              <div className="mt-4 text-gray-600">
-                Absolutely! You can customize colors, fonts, intro/outro
-                sequences, and even the AI voice to match your brand identity.
-                Our Professional and Enterprise plans offer more extensive
-                customization options, including custom templates and brand
-                kits.
+              <div className="mt-6">
+                <p className="text-xl text-black font-medium">
+                  Absolutely! You can customize colors, fonts, intro/outro
+                  sequences, and even the AI voice to match your brand identity.
+                  Our Professional and Enterprise plans offer more extensive
+                  customization options, including custom templates and brand
+                  kits.
+                </p>
               </div>
             </Card>
 
-            <Card className="p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow rounded-xl">
+            <Card className="p-8 border-4 border-black rounded-none shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all bg-white">
               <div className="flex justify-between items-start cursor-pointer">
-                <h3 className="text-xl font-semibold">
-                  &quot;How long does it take to create a video?&quot;
+                <h3 className="text-3xl font-black text-black">
+                  How long does it take to create a video?
                 </h3>
-                <span>🔽</span>
+                <div className="h-12 w-12 bg-[#fcd40b] rounded-none border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                  <span className="text-2xl">🔽</span>
+                </div>
               </div>
-              <div className="mt-4 text-gray-600">
-                &quot;Most videos are ready within 2-4 hours after you approve the
-                keyword and topic. For more complex videos or those requiring
-                extensive customization, it may take up to 24 hours. Our
-                Enterprise plan includes priority processing for faster
-                turnaround times.&quot;
+              <div className="mt-6">
+                <p className="text-xl text-black font-medium">
+                  Most videos are ready within 2-4 hours after you approve the
+                  keyword and topic. For more complex videos or those requiring
+                  extensive customization, it may take up to 24 hours. Our
+                  Enterprise plan includes priority processing for faster
+                  turnaround times.
+                </p>
               </div>
             </Card>
           </div>
